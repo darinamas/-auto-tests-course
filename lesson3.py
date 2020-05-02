@@ -22,6 +22,9 @@ try:
     print(x)
     y = calc(x)
 
+    new_function = browser.find_element_by_css_selector("#answer")
+    new_function.send_keys(y)
+
     input12 = browser.find_element_by_css_selector("#answer")
     input12.send_keys(y)
 
